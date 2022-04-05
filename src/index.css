@@ -1,0 +1,99 @@
+
+.dark-theme {
+  --main-color : rgba(29, 165, 29);
+  --bg-color : #282C35;
+  --font-color: #F1F1F1;
+}
+
+.light-theme {
+  --main-color : rgba(29, 165, 29);
+  --bg-color : #F1F1F1;
+  --font-color: #282C35;
+}
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.App {
+  width: 60%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .App {
+    width: 90%;
+  }
+}
+
+.App navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(29, 165, 29, 0.151);
+}
+
+.logo {
+  color: var(--main-color);
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-style: italic;
+}
+
+.logo span {
+  color: rgb(63, 63, 63);
+}
+
+.App navbar button {
+  background: var(--main-color);
+  color:white;
+  border:none;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+} 
+
+.App .content {
+  padding: 50px 0;
+}
+
+.App .content article {
+  margin: 40px 0;
+}
+
+.App .content h1 {
+  color: var(--main-color);
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.App .content .time {
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.App .content .description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--font-color);
+  text-transform: capitalize;
+}
